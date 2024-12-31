@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "69b9f404-eee0-4d78-a959-308f78273541",
+		"name": "city-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26202160"
+	},
+	"item": [
+		{
+			"name": "update",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/cities",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Bengaluru\",\n  \"population\": 8443675,\n  \"country\": \"India\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cities/6773fd6eafa870b64ad05284",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cities",
+								"6773fd6eafa870b64ad05284"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/cities",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Bengaluru\",\n  \"population\": 8443675,\n  \"country\": \"India\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}\n\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/cities/6773fd6eafa870b64ad05284",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cities",
+										"6773fd6eafa870b64ad05284"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bb-6R+MWwRsi4gk3+ZBPGAH2JMtJH0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 31 Dec 2024 14:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City updated successfully.\",\n    \"city\": {\n        \"_id\": \"6773fd6eafa870b64ad05284\",\n        \"name\": \"Bengaluru\",\n        \"population\": 8443675,\n        \"country\": \"India\",\n        \"latitude\": 12.9716,\n        \"longitude\": 77.5946,\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/cities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"mysuru\",\n  \"population\": 8443675,\n  \"country\": \"India\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cities/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cities",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/cities",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"new york\",\n  \"population\": 8419600,\n  \"country\": \"USA\",\n  \"latitude\": 40.7128,\n  \"longitude\": -74.0060\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/cities/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cities",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-x29jtLCshWBdlF973viAizgMC6s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 31 Dec 2024 14:26:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City added successfully.\",\n    \"city\": {\n        \"name\": \"new york\",\n        \"population\": 8419600,\n        \"country\": \"USA\",\n        \"latitude\": 40.7128,\n        \"longitude\": -74.006,\n        \"_id\": \"6773ff26afa870b64ad0528d\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/cities",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"mysuru\",\n  \"population\": 8443675,\n  \"country\": \"India\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cities/6773fe06afa870b64ad0528a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cities",
+								"6773fe06afa870b64ad0528a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/cities",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"mysuru\",\n  \"population\": 8443675,\n  \"country\": \"India\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}\n\n\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/cities/6773ff89afa870b64ad05291",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cities",
+										"6773ff89afa870b64ad05291"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-/ZsmFWBy1GI3TIwJk3fxV2Q+tjQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 31 Dec 2024 14:29:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"City deleted successfully.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "get",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/cities?page=1&limit=10&search=bengal&filter={\"population\":{\"$gt\":5000000}}&sort=population:asc&fields=name,population\n",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/cities?page=1&limit=10&search=bengal&filter={\"population\":{\"$gt\":5000000}}&sort=population:asc&fields=name,population\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cities"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": "bengal"
+								},
+								{
+									"key": "filter",
+									"value": "{\"population\":{\"$gt\":5000000}}"
+								},
+								{
+									"key": "sort",
+									"value": "population:asc"
+								},
+								{
+									"key": "fields",
+									"value": "name,population\n"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/cities?page=1&limit=10&search=bengal&filter={\"population\":{\"$gt\":5000000}}&sort=population:asc&fields=name,population",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/cities?page=1&limit=10&search=bengal&filter={\"population\":{\"$gt\":5000000}}&sort=population:asc&fields=name,population\n",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cities"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": "bengal"
+										},
+										{
+											"key": "filter",
+											"value": "{\"population\":{\"$gt\":5000000}}"
+										},
+										{
+											"key": "sort",
+											"value": "population:asc"
+										},
+										{
+											"key": "fields",
+											"value": "name,population\n"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-IPWXDWtI4aonWuP2LlfdorzKxrw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 31 Dec 2024 14:30:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 1,\n    \"page\": \"1\",\n    \"limit\": \"10\",\n    \"cities\": [\n        {\n            \"_id\": \"6773fd6eafa870b64ad05284\",\n            \"name\": \"Bengaluru\",\n            \"population\": 8443675\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:3000/api/cities?sort=name:asc\nhttp://localhost:3000/api/cities?sort=name:asc\n",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/cities?sort=name:asc\nhttp://localhost:3000/api/cities?sort=name:asc\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cities"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "name:asc\nhttp://localhost:3000/api/cities?sort=name:asc\n"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/api/cities?sort=name:asc\nhttp://localhost:3000/api/cities?sort=name:asc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/cities?sort=name:asc\nhttp://localhost:3000/api/cities?sort=name:asc\n",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cities"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "name:asc\nhttp://localhost:3000/api/cities?sort=name:asc\n"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "730"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2da-t/lWcIFfIQwl7RPg290i6VfNm+I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 31 Dec 2024 14:34:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 5,\n    \"page\": 1,\n    \"limit\": 10,\n    \"cities\": [\n        {\n            \"_id\": \"6773fd6eafa870b64ad05284\",\n            \"name\": \"Bengaluru\",\n            \"population\": 8443675,\n            \"country\": \"India\",\n            \"latitude\": 12.9716,\n            \"longitude\": 77.5946,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6773fd34afa870b64ad05282\",\n            \"name\": \"Mumbai\",\n            \"population\": 20667656,\n            \"country\": \"India\",\n            \"latitude\": 19.076,\n            \"longitude\": 72.8777,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6773fcc6afa870b64ad0527e\",\n            \"name\": \"Paris\",\n            \"population\": 2161000,\n            \"country\": \"France\",\n            \"latitude\": 48.8566,\n            \"longitude\": 2.3522,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6773fd1dafa870b64ad05280\",\n            \"name\": \"Tokyo\",\n            \"population\": 13929286,\n            \"country\": \"Japan\",\n            \"latitude\": 35.6895,\n            \"longitude\": 139.6917,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6773ff26afa870b64ad0528d\",\n            \"name\": \"new york\",\n            \"population\": 8419600,\n            \"country\": \"USA\",\n            \"latitude\": 40.7128,\n            \"longitude\": -74.006,\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
